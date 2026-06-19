@@ -1,0 +1,49 @@
+name: Update progress card
+
+on:
+  schedule:
+    - cron: "17 * * * *"   # 每小时一次
+  workflow_dispatch:        # 也可手动触发
+
+permissions:
+  contents: write
+
+concurrency:
+  group: progress
+  cancel-in-progress: true
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Fetch progress from Cloudflare Worker
+        env:
+          WORKER_BASE: ${{ secrets.WORKER_BASE }}
+        run: |
+          if curl -fsS "$WORKER_BASE/progress.json" -o /tmp/p.json \
+             && node -e "JSON.parse(require('fs').readFileSync('/tmp/p.json','utf8'))"; then
+            mv /tmp/p.json data/progress.json
+            echo "progress.json updated"
+          else
+            echo "fetch failed or invalid JSON — keeping committed data/progress.json"
+          fi
+      - name: Generate progress.svg
+        run: LANG_OUT=en node scripts/gen-svg.cjs
+      - name: Commit progress card
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          # cache-bust:卡片内容变了就把图片 URL 的 ?v= 换成新哈希,逼 GitHub(camo)重取
+          SVGHASH=$(sha256sum progress.svg | cut -c1-10)
+          sed -i -E "s#(progress\.svg)(\?v=[a-f0-9]+)?#\1?v=$SVGHASH#" README.md
+          git add -A
+          if git diff --cached --quiet; then
+            echo "no change — skip"
+            exit 0
+          fi
+          git commit -m "chore: refresh progress card"
+          git push

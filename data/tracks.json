@@ -1,0 +1,27 @@
+[
+  {
+    "id": "demo",
+    "label": "Demo",
+    "color": "var(--teal)"
+  },
+  {
+    "id": "robotic",
+    "label": "机器人",
+    "color": "var(--green)"
+  },
+  {
+    "id": "eeg",
+    "label": "论文 / 理论",
+    "color": "var(--orange)"
+  },
+  {
+    "id": "ai",
+    "label": "AI 表征对齐",
+    "color": "var(--blue)"
+  },
+  {
+    "id": "review",
+    "label": "整合 / 复盘",
+    "color": "var(--text-muted)"
+  }
+]
