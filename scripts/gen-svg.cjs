@@ -38,8 +38,8 @@ var byTrack = tracks.map(function (tr) {
 var LANG = process.env.LANG_OUT === "en" ? "en" : "zh";
 var EN = { demo: "Demo", robotic: "Robotics", eeg: "Papers / Theory", ai: "AI · Repr.", review: "Synthesis" };
 var L = {
-  zh: { stats: ["已完成", "完成率", "当前连续"], hm: "打卡热力图", done: "已完成", todo: "待办" },
-  en: { stats: ["completed", "progress", "streak"], hm: "study heatmap", done: "done", todo: "todo" },
+  zh: { stats: ["已完成", "完成率", "当前连续", "累计学时"], hm: "打卡热力图", done: "已完成", todo: "待办" },
+  en: { stats: ["completed", "progress", "streak", "hours"], hm: "study heatmap", done: "done", todo: "todo" },
 }[LANG];
 function trackLabel(t) { return LANG === "en" ? (EN[t.id] || t.id) : t.label; }
 
@@ -89,9 +89,9 @@ s += '<rect x="108" y="' + (legY - 9) + '" width="11" height="11" rx="2" fill="#
 s += '</g>';
 
 // 右:统计
-var statsX = 440, sv = [[doneN + ' / ' + total, L.stats[0]], [pct + "%", L.stats[1]], [String(cur), L.stats[2]]];
+var statsX = 440, sv = [[doneN + ' / ' + total, L.stats[0]], [pct + "%", L.stats[1]], [String(cur), L.stats[2]], [hours + "h", L.stats[3]]];
 sv.forEach(function (st, i) {
-  var x = statsX + i * 150;
+  var x = statsX + i * 112;
   s += '<text x="' + x + '" y="46" font-family="' + SERIF + '" font-weight="900" font-size="26" fill="#D85A30">' + esc(st[0]) + '</text>';
   s += '<text x="' + x + '" y="64" font-family="' + MONO + '" font-size="10" letter-spacing="0.05em" fill="#8a8a84">' + esc(st[1]) + '</text>';
 });
