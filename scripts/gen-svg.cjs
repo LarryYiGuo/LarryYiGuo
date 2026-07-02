@@ -47,22 +47,15 @@ function trackLabel(t) { return LANG === "en" ? (EN[t.id] || t.id) : t.label; }
 var COL = { "var(--teal)": "#0E9E8E", "var(--green)": "#1D9E75", "var(--orange)": "#D85A30", "var(--blue)": "#4F7396", "var(--text-muted)": "#8a8a84" };
 function col(c) { return COL[c] || c; }
 
-// 热力图格子
-var studySet = {}; tasks.forEach(function (t) { studySet[t.date] = true; });
-var fm = parseLocal(startD); fm.setDate(fm.getDate() - ((fm.getDay() + 6) % 7));
-var lsd = parseLocal(endD); lsd.setDate(lsd.getDate() + (6 - ((lsd.getDay() + 6) % 7)));
-var cells = [], curd = new Date(fm), wk = 0;
-while (curd <= lsd) {
-  for (var dd = 0; dd < 7; dd++) {
-    var ds = fmtISO(curd);
-    if (studySet[ds]) {
-      var fill = done(ds) ? "#1D9E75" : (ds < todayISO ? "#efe3df" : "#e4e2db");
-      cells.push({ wk: wk, d: dd, fill: fill });
-    }
-    curd.setDate(curd.getDate() + 1);
-  }
-  wk++;
-}
+// 热力图格子(顺序打包:第 i 个学习日 = 第 floor(i/7) 列、第 i%7 行,
+// 首个任务=左上第一格,逐列自上而下填充。工作日计划,不按自然周对齐,避免首格空置)
+var cells = [];
+sorted.forEach(function (t, i) {
+  var ds = t.date;
+  var fill = done(ds) ? "#1D9E75" : (ds < todayISO ? "#efe3df" : "#e4e2db");
+  cells.push({ wk: Math.floor(i / 7), d: i % 7, fill: fill });
+});
+var wk = Math.ceil(sorted.length / 7);
 
 // ── 布局 + 出 SVG ──
 var W = 880, H = 224, SERIF = "'Noto Serif SC','Songti SC',Georgia,serif", MONO = "'JetBrains Mono',ui-monospace,monospace", SANS = "'Noto Sans SC',sans-serif";
