@@ -2,7 +2,7 @@ name: Update progress card
 
 on:
   schedule:
-    - cron: "17 * * * *"   # 每小时一次
+    - cron: "*/15 * * * *"   # 每 15 分钟一次
   workflow_dispatch:        # 也可手动触发
 
 permissions:
