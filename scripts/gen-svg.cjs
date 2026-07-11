@@ -36,7 +36,7 @@ var byTrack = tracks.map(function (tr) {
 
 // 语言:LANG_OUT=en 出英文标签(对联始终中文)
 var LANG = process.env.LANG_OUT === "en" ? "en" : "zh";
-var EN = { demo: "Demo", robotic: "Robotics", eeg: "Papers / Theory", ai: "AI · Repr.", review: "Synthesis" };
+var EN = { demo: "Demo", robotic: "Robotics", eeg: "Papers / Theory", ai: "AI · Repr.", review: "Synthesis", shared: "Shared Control", semantic: "Semantic", flex: "Flex" };
 var L = {
   zh: { stats: ["已完成", "完成率", "当前连续", "累计学时"], hm: "打卡热力图", done: "已完成", todo: "待办" },
   en: { stats: ["completed", "progress", "streak", "hours"], hm: "study heatmap", done: "done", todo: "todo" },
