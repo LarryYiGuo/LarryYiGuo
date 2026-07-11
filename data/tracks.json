@@ -1,27 +1,32 @@
 [
   {
-    "id": "demo",
-    "label": "Demo",
-    "color": "var(--teal)"
+    "id": "shared",
+    "label": "共享控制",
+    "color": "#D85A30"
+  },
+  {
+    "id": "semantic",
+    "label": "语义解码",
+    "color": "#0E9E8E"
   },
   {
     "id": "robotic",
     "label": "机器人",
-    "color": "var(--green)"
-  },
-  {
-    "id": "eeg",
-    "label": "论文 / 理论",
-    "color": "var(--orange)"
+    "color": "#1D9E75"
   },
   {
     "id": "ai",
     "label": "AI 表征对齐",
-    "color": "var(--blue)"
+    "color": "#4F7396"
   },
   {
     "id": "review",
     "label": "整合 / 复盘",
-    "color": "var(--text-muted)"
+    "color": "#8a8a84"
+  },
+  {
+    "id": "flex",
+    "label": "机动 / 缓冲",
+    "color": "#B08968"
   }
 ]

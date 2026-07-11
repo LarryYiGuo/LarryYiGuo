@@ -58,7 +58,7 @@ sorted.forEach(function (t, i) {
 var wk = Math.ceil(sorted.length / 7);
 
 // ── 布局 + 出 SVG ──
-var W = 880, H = 224, SERIF = "'Noto Serif SC','Songti SC',Georgia,serif", MONO = "'JetBrains Mono',ui-monospace,monospace", SANS = "'Noto Sans SC',sans-serif";
+var W = 880, H = 250, SERIF = "'Noto Serif SC','Songti SC',Georgia,serif", MONO = "'JetBrains Mono',ui-monospace,monospace", SANS = "'Noto Sans SC',sans-serif";
 var s = '';
 s += '<svg width="100%" viewBox="0 0 ' + W + ' ' + H + '" role="img" xmlns="http://www.w3.org/2000/svg">';
 s += '<title>学习追踪</title><desc>打卡热力图、统计、按轨道进度与荣枯鉴对联。</desc>';

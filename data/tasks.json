@@ -1,51 +1,19 @@
 [
 {
-"date": "2026-07-01",
-"trackId": "robotic"
-},
-{
-"date": "2026-07-02",
-"trackId": "demo"
-},
-{
-"date": "2026-07-03",
-"trackId": "demo"
-},
-{
-"date": "2026-07-06",
-"trackId": "demo"
-},
-{
-"date": "2026-07-07",
-"trackId": "demo"
-},
-{
-"date": "2026-07-08",
-"trackId": "demo"
-},
-{
-"date": "2026-07-09",
-"trackId": "demo"
-},
-{
-"date": "2026-07-10",
-"trackId": "demo"
-},
-{
 "date": "2026-07-13",
-"trackId": "demo"
+"trackId": "review"
 },
 {
 "date": "2026-07-14",
-"trackId": "demo"
+"trackId": "semantic"
 },
 {
 "date": "2026-07-15",
-"trackId": "eeg"
+"trackId": "semantic"
 },
 {
 "date": "2026-07-16",
-"trackId": "eeg"
+"trackId": "shared"
 },
 {
 "date": "2026-07-17",
@@ -53,247 +21,247 @@
 },
 {
 "date": "2026-07-20",
-"trackId": "ai"
+"trackId": "shared"
 },
 {
 "date": "2026-07-21",
-"trackId": "robotic"
+"trackId": "shared"
 },
 {
 "date": "2026-07-22",
-"trackId": "robotic"
+"trackId": "semantic"
 },
 {
 "date": "2026-07-23",
-"trackId": "robotic"
+"trackId": "ai"
 },
 {
 "date": "2026-07-24",
-"trackId": "robotic"
+"trackId": "semantic"
 },
 {
 "date": "2026-07-27",
-"trackId": "robotic"
+"trackId": "ai"
 },
 {
 "date": "2026-07-28",
-"trackId": "robotic"
+"trackId": "semantic"
 },
 {
 "date": "2026-07-29",
-"trackId": "robotic"
+"trackId": "semantic"
 },
 {
 "date": "2026-07-30",
-"trackId": "review"
+"trackId": "ai"
 },
 {
 "date": "2026-07-31",
-"trackId": "robotic"
+"trackId": "flex"
 },
 {
 "date": "2026-08-03",
-"trackId": "demo"
+"trackId": "shared"
 },
 {
 "date": "2026-08-04",
-"trackId": "demo"
+"trackId": "semantic"
 },
 {
 "date": "2026-08-05",
-"trackId": "demo"
+"trackId": "shared"
 },
 {
 "date": "2026-08-06",
-"trackId": "demo"
+"trackId": "semantic"
 },
 {
 "date": "2026-08-07",
-"trackId": "demo"
+"trackId": "semantic"
 },
 {
 "date": "2026-08-10",
-"trackId": "demo"
+"trackId": "robotic"
 },
 {
 "date": "2026-08-11",
-"trackId": "demo"
+"trackId": "robotic"
 },
 {
 "date": "2026-08-12",
-"trackId": "demo"
+"trackId": "robotic"
 },
 {
 "date": "2026-08-13",
-"trackId": "demo"
+"trackId": "robotic"
 },
 {
 "date": "2026-08-14",
-"trackId": "demo"
+"trackId": "flex"
 },
 {
 "date": "2026-08-17",
-"trackId": "demo"
+"trackId": "robotic"
 },
 {
 "date": "2026-08-18",
-"trackId": "demo"
+"trackId": "robotic"
 },
 {
 "date": "2026-08-19",
-"trackId": "demo"
+"trackId": "robotic"
 },
 {
 "date": "2026-08-20",
-"trackId": "demo"
+"trackId": "shared"
 },
 {
 "date": "2026-08-21",
-"trackId": "demo"
+"trackId": "review"
 },
 {
 "date": "2026-08-24",
-"trackId": "demo"
+"trackId": "robotic"
 },
 {
 "date": "2026-08-25",
-"trackId": "review"
+"trackId": "semantic"
 },
 {
 "date": "2026-08-26",
-"trackId": "ai"
+"trackId": "robotic"
 },
 {
 "date": "2026-08-27",
-"trackId": "ai"
+"trackId": "shared"
 },
 {
 "date": "2026-08-28",
-"trackId": "ai"
+"trackId": "robotic"
 },
 {
 "date": "2026-08-31",
-"trackId": "ai"
+"trackId": "robotic"
 },
 {
 "date": "2026-09-01",
-"trackId": "ai"
+"trackId": "robotic"
 },
 {
 "date": "2026-09-02",
-"trackId": "ai"
+"trackId": "robotic"
 },
 {
 "date": "2026-09-03",
-"trackId": "eeg"
+"trackId": "robotic"
 },
 {
 "date": "2026-09-04",
-"trackId": "eeg"
+"trackId": "flex"
 },
 {
 "date": "2026-09-07",
-"trackId": "demo"
+"trackId": "shared"
 },
 {
 "date": "2026-09-08",
-"trackId": "demo"
+"trackId": "semantic"
 },
 {
 "date": "2026-09-09",
-"trackId": "demo"
+"trackId": "shared"
 },
 {
 "date": "2026-09-10",
-"trackId": "robotic"
+"trackId": "shared"
 },
 {
 "date": "2026-09-11",
-"trackId": "robotic"
+"trackId": "semantic"
 },
 {
 "date": "2026-09-14",
-"trackId": "eeg"
+"trackId": "shared"
 },
 {
 "date": "2026-09-15",
-"trackId": "robotic"
+"trackId": "shared"
 },
 {
 "date": "2026-09-16",
-"trackId": "robotic"
+"trackId": "shared"
 },
 {
 "date": "2026-09-17",
-"trackId": "eeg"
+"trackId": "shared"
 },
 {
 "date": "2026-09-18",
-"trackId": "eeg"
+"trackId": "shared"
 },
 {
 "date": "2026-09-21",
-"trackId": "eeg"
+"trackId": "semantic"
 },
 {
 "date": "2026-09-22",
-"trackId": "eeg"
+"trackId": "semantic"
 },
 {
 "date": "2026-09-23",
-"trackId": "eeg"
+"trackId": "shared"
 },
 {
 "date": "2026-09-24",
-"trackId": "eeg"
+"trackId": "semantic"
 },
 {
 "date": "2026-09-25",
-"trackId": "eeg"
+"trackId": "review"
 },
 {
 "date": "2026-09-28",
-"trackId": "eeg"
-},
-{
-"date": "2026-09-29",
-"trackId": "eeg"
-},
-{
-"date": "2026-09-30",
-"trackId": "eeg"
-},
-{
-"date": "2026-10-01",
-"trackId": "eeg"
-},
-{
-"date": "2026-10-02",
-"trackId": "eeg"
-},
-{
-"date": "2026-10-05",
-"trackId": "demo"
-},
-{
-"date": "2026-10-06",
 "trackId": "robotic"
 },
 {
+"date": "2026-09-29",
+"trackId": "shared"
+},
+{
+"date": "2026-09-30",
+"trackId": "shared"
+},
+{
+"date": "2026-10-01",
+"trackId": "robotic"
+},
+{
+"date": "2026-10-02",
+"trackId": "robotic"
+},
+{
+"date": "2026-10-05",
+"trackId": "semantic"
+},
+{
+"date": "2026-10-06",
+"trackId": "ai"
+},
+{
 "date": "2026-10-07",
-"trackId": "review"
+"trackId": "ai"
 },
 {
 "date": "2026-10-08",
-"trackId": "review"
+"trackId": "shared"
 },
 {
 "date": "2026-10-09",
-"trackId": "review"
+"trackId": "semantic"
 },
 {
 "date": "2026-10-12",
-"trackId": "review"
+"trackId": "shared"
 },
 {
 "date": "2026-10-13",
@@ -301,10 +269,54 @@
 },
 {
 "date": "2026-10-14",
-"trackId": "review"
+"trackId": "semantic"
 },
 {
 "date": "2026-10-15",
+"trackId": "shared"
+},
+{
+"date": "2026-10-16",
 "trackId": "review"
+},
+{
+"date": "2026-10-19",
+"trackId": "shared"
+},
+{
+"date": "2026-10-20",
+"trackId": "ai"
+},
+{
+"date": "2026-10-21",
+"trackId": "robotic"
+},
+{
+"date": "2026-10-22",
+"trackId": "ai"
+},
+{
+"date": "2026-10-23",
+"trackId": "review"
+},
+{
+"date": "2026-10-26",
+"trackId": "review"
+},
+{
+"date": "2026-10-27",
+"trackId": "shared"
+},
+{
+"date": "2026-10-28",
+"trackId": "shared"
+},
+{
+"date": "2026-10-29",
+"trackId": "review"
+},
+{
+"date": "2026-10-30",
+"trackId": "flex"
 }
 ]
