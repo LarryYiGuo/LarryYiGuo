@@ -1,5 +1,5 @@
 <div align="center">
 
-![学习追踪](https://raw.githubusercontent.com/LarryYiGuo/LarryYiGuo/main/progress.svg?v=26f255d2ca)
+![学习追踪](https://raw.githubusercontent.com/LarryYiGuo/LarryYiGuo/main/progress.svg?v=053c5118b8)
 
 </div>
